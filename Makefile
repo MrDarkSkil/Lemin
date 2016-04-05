@@ -5,11 +5,11 @@
 ## Login   <hubert_i@epitech.net>
 ##
 ## Started on  Wed Nov  4 09:57:56 2015 leo hubert
-## Last update Tue Apr  5 10:52:32 2016 Léo Hubert
+## Last update Tue Apr  5 10:53:53 2016 Lucas Gambini
 ##
 
 LIB  	=	-lm -lmy -L./lib/
-#CFLAGS  +=      -W -Wextra -Werror -Wall -pedantic
+CFLAGS  +=      -W -Wextra -Werror -Wall -pedantic
 CFLAGS  +=      -I./include/
 
 CC	=	gcc

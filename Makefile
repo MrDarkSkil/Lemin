@@ -5,16 +5,17 @@
 ## Login   <hubert_i@epitech.net>
 ##
 ## Started on  Wed Nov  4 09:57:56 2015 leo hubert
-## Last update Tue Apr  5 10:52:32 2016 Léo Hubert
+## Last update Tue Apr  5 10:55:37 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
-#CFLAGS  +=      -W -Wextra -Werror -Wall -pedantic
+#CFLAGS  +=	-Werror
+CFLAGS  +=      -W -Wextra -Wall -pedantic
 CFLAGS  +=      -I./include/
 
 CC	=	gcc
 
-NAME    =	la_mine,CommeEnSoiree,Melvin,Douche,LeRelou
+NAME    =	la_mine\#CommeEnSoiree\#Melvin\#DoucheA5Heures\#LeRelou
 
 SRC	=	src/main.c
 

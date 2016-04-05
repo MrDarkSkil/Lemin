@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ##
 ## Started on  Wed Nov  4 09:57:56 2015 leo hubert
-## Last update Tue Apr  5 10:46:21 2016 Léo Hubert
+## Last update Tue Apr  5 10:52:32 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -14,7 +14,7 @@ CFLAGS  +=      -I./include/
 
 CC	=	gcc
 
-NAME    =	mysh
+NAME    =	la_mine,CommeEnSoiree,Melvin,Douche,LeRelou
 
 SRC	=	src/main.c
 

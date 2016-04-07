@@ -1,11 +1,11 @@
 ##
-## Makefile for Mafefile in /home/hubert_i/rendu/PSU_2015_my_printf
-##
-## Made by leo hubert
+## Makefile for la_mine in /home/hubert_i/rendu/2015/Lemin
+## 
+## Made by Léo Hubert
 ## Login   <hubert_i@epitech.net>
-##
-## Started on  Wed Nov  4 09:57:56 2015 leo hubert
-## Last update Fri Apr  8 00:02:36 2016 Lucas Gambini
+## 
+## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
+## Last update Fri Apr  8 00:40:54 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -17,7 +17,8 @@ CC	=	gcc
 
 NAME    =	la_mine\#CommeEnSoiree\#Melvin\#DoucheA5Heures\#Vodka\#Fain
 
-SRC	=	src/main.c			\
+SRC	=	src/main.c		\
+		src/get_next_line.c
 
 ECHO	=	/bin/echo -e
 DEFAULT	=	"\033[00m"
@@ -63,6 +64,13 @@ $(NAME):	$(OBJ)
 		$(ECHO) $(GREEN) "[OK] gcc" $(TEAL) $(OBJ) $(DEFAULT) || \
 		$(ECHO) $(RED) "[ERROR] gcc" $(TEAL) $(OBJ) $(DEFAULT)
 		@$(ECHO) $(FINISH) "\nCompilation Succesfully of "$(NAME) $(DEFAULT)
+		@$(ECHO) $(RED)".____                        .__                     _  _  ____   ____        ._____            "
+		@$(ECHO) "|    |   _____         _____ |__| ____   ____     __| || |_\   \ /   /___   __| _/  | _______   "
+		@$(ECHO) "|    |   \__  \       /     \|  |/    \_/ __ \    \   __   /\   Y   /  _ \ / __ ||  |/ /\__  \  "
+		@$(ECHO) "|    |___ / __ \_    |  Y Y  \  |   |  \  ___/     |  ||  |  \     (  <_> ) /_/ ||    <  / __ \_"
+		@$(ECHO) "|_______ (____  /____|__|_|  /__|___|  /\___  >   /_  ~~  _\  \___/ \____/\____ ||__|_ \(____  /"
+		@$(ECHO) "        \/    \/_____/     \/        \/     \/      |_||_|                     \/     \/     \/ "
+		@$(ECHO) $(DEFAULT)
 		@paplay include/sound/end.ogg &
 
 %.o:		%.c

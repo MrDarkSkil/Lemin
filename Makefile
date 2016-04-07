@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Fri Apr  8 00:40:54 2016 Léo Hubert
+## Last update Fri Apr  8 01:05:43 2016 Lucas Gambini
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -15,10 +15,11 @@ CFLAGS  +=      -I./include/
 
 CC	=	gcc
 
-NAME    =	la_mine\#CommeEnSoiree\#Melvin\#DoucheA5Heures\#Vodka\#Fain
+NAME    =	lamine
 
 SRC	=	src/main.c		\
-		src/get_next_line.c
+		src/get_next_line.c	\
+		src/parsing.c		\
 
 ECHO	=	/bin/echo -e
 DEFAULT	=	"\033[00m"

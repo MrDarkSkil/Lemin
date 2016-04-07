@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:53 2016 Lucas Gambini
-** Last update Thu Apr  7 23:38:03 2016 Lucas Gambini
+** Last update Fri Apr  8 01:06:07 2016 Lucas Gambini
 */
 
 #ifndef _LAMIN_
@@ -22,5 +22,7 @@ typedef struct		s_input
   struct s_input	*prev;
   struct s_input	*next;
 }			t_input;
+
+void	remove_comment(char *buff);
 
 #endif /* _LAMIN_ */

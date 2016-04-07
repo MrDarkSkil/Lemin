@@ -5,7 +5,7 @@
 ## Login   <jabbar_y@epitech.net>
 ## 
 ## Started on  Mon Nov  2 14:30:26 2015 Jabbari Yassir
-## Last update Thu Mar 24 03:58:34 2016 Léo Hubert
+## Last update Thu Apr  7 23:44:56 2016 Lucas Gambini
 ##
 
 ECHO	=	/bin/echo -e
@@ -63,7 +63,7 @@ SRCS	= 	my_find_prime_sup.c		\
 		my_putnbr_base.c		\
 		my_putnbr_base_size.c		\
 		my_putnbr_unsigned.c  		\
-		my_swap.c
+		my_swap.c			\
 
 OBJS	= $(SRCS:.c=.o)
 

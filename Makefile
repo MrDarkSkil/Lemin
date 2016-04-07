@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ##
 ## Started on  Wed Nov  4 09:57:56 2015 leo hubert
-## Last update Tue Apr  5 11:06:18 2016 Léo Hubert
+## Last update Fri Apr  8 00:02:36 2016 Lucas Gambini
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -17,7 +17,7 @@ CC	=	gcc
 
 NAME    =	la_mine\#CommeEnSoiree\#Melvin\#DoucheA5Heures\#Vodka\#Fain
 
-SRC	=	src/main.c
+SRC	=	src/main.c			\
 
 ECHO	=	/bin/echo -e
 DEFAULT	=	"\033[00m"

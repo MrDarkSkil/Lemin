@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:53 2016 Lucas Gambini
-** Last update Tue Apr  5 12:19:58 2016 Lucas Gambini
+** Last update Thu Apr  7 23:38:03 2016 Lucas Gambini
 */
 
 #ifndef _LAMIN_
@@ -13,20 +13,14 @@
 
 # include "my.h"
 
-typedef struct s_node
+typedef struct		s_input
 {
-  int		id; /* C'est le premier chiffre d'une ligne */
-  int		posx; /* Le 2e */
-  int		posy; /* Le 3e */
-  int		ant; /* si ya une fourmi ou pas */
-  struct s_node	*prev; /* Starfoullah */
-  t_next	*next; /* list chainée de next */
-}		t_node;
-
-typedef struct	s_next
-{
-  struct s_next	*nxt;
-  t_node	*next;
-}		t_next;
+  int			posx;
+  int			posy;
+  int			id;
+  int			first;
+  struct s_input	*prev;
+  struct s_input	*next;
+}			t_input;
 
 #endif /* _LAMIN_ */

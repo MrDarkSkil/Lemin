@@ -5,13 +5,14 @@
 ** Login   <hubert_1@epitech.net>
 **
 ** Started on  Thu Oct  8 14:25:19 2015 leo hubert
-** Last update Thu Mar 24 04:02:14 2016 Léo Hubert
+** Last update Fri Apr  8 00:02:23 2016 Lucas Gambini
 */
 
 #ifndef MY_
 # define MY_
 
 # include <unistd.h>
+# include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
 # include <sys/stat.h>
@@ -19,7 +20,6 @@
 # include <sys/types.h>
 # include <sys/wait.h>
 # include <signal.h>
-# include "get_next_line.h"
 
 typedef struct s_list
 {

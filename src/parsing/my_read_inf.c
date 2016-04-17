@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 16:37:05 2016 boris saint-bonnet
-** Last update Sun Apr 17 20:19:32 2016 boris saint-bonnet
+** Last update Sun Apr 17 21:03:54 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -27,7 +27,7 @@ char             **file_to_tab(int fd)
       file1d = my_realloc(file1d, sizeof(char) * (my_strlen(file1d) + 2));
       i++;
     }
-  if ((file = my_str_to_wordtab(file1d, 0, 0)) == NULL)
+  if ((file = my_wordtab(file1d, 0, 0)) == NULL)
     return (NULL);
   free(file1d);
   return (file);

@@ -9,3 +9,13 @@
 */
 
 # include "lemin.h"
+
+t_list	*tab_to_list(t_list *list, char **tab)
+{
+  int	i;
+
+  i = 0;
+  while (tab[++i])
+    list = check_line(tab[i], list);
+  return (list);
+}

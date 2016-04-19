@@ -1,11 +1,11 @@
 /*
 ** linked_list.h for  in /home/xx/Rendu/CPE/Lemin
-** 
+**
 ** Made by boris saint-bonnet
 ** Login   <saint-_o@epitech.net>
-** 
+**
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Tue Apr 19 14:49:14 2016 boris saint-bonnet
+** Last update Tue Apr 19 15:41:19 2016 Lucas Gambini
 */
 
 # ifndef __LINKED_LIST_H__
@@ -32,14 +32,20 @@ typedef struct		s_node
   int			ant;		/* boleen permettant de savoir si il y a une fourmi ou pas dans la salle */
   int			link_lenght;	/* le nombre de salle à laquelle celle-ci est reliée */
   struct s_node		*prev;		/* liste doublement chainée */
-  struct s_node		*next;		
+  struct s_node		*next;
   struct s_link		*nxt;		/* liste de next ( lien de la salle) */
 }			t_node;
 
 typedef struct		s_link
 {
-  struct s_node		*link;		/* pointeur vers l'emplacement memoire de la salle */ 
+  struct s_node		*link;		/* pointeur vers l'emplacement memoire de la salle */
   struct s_node		*next_link;	/* pointeur vers le prochain lien */
 }			t_link;
+
+t_graph *init_list(int  ants);
+t_node  *init_link(t_node *node);
+t_node  *find_link(t_graph *list, char *name);
+t_graph *push(t_graph *list, t_node *tmp);
+t_graph *add_link(t_graph *list, t_node *node, char *id);
 
 # endif /* ! __LINKED_LIST_H__ */

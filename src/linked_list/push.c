@@ -5,16 +5,16 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sun Apr 17 22:46:27 2016 boris saint-bonnet
+** Last update Tue Apr 19 15:14:58 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
 
-t_list  *push(t_list *list, t_node *tmp)
+t_graph  *push(t_graph *list, t_node *tmp)
 {
   t_node        *node;
   
-  node = xalloc(sizeof(t_node));
+  node = xmalloc(sizeof(t_node));
   if (list != NULL)
     {
       if (node != NULL)
@@ -24,6 +24,8 @@ t_list  *push(t_list *list, t_node *tmp)
 	  node->posy = tmp->posy;
 	  node->ant = 0;
 	  node->link_lenght = 0;
+	  node->visited = 0;
+	  node->dist = 0;
 	  node->next = NULL;
 	  if (list->tail == NULL)
 	    {
@@ -43,9 +45,9 @@ t_list  *push(t_list *list, t_node *tmp)
   return (list);
 }
 
-t_list	*add_link(t_list *list, t_node *node, char *id)
+t_graph	*add_link(t_graph *list, t_node *node, char *id)
 {
-  t_node	*tmp;
+  t_link	*tmp;
   
   if (node->nxt->link == NULL)
     {
@@ -61,4 +63,3 @@ t_list	*add_link(t_list *list, t_node *node, char *id)
     }
   return (list);
 }
-  

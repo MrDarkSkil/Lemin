@@ -5,12 +5,12 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 21:49:06 2016 boris saint-bonnet
-** Last update Sun Apr 17 22:17:05 2016 boris saint-bonnet
+** Last update Tue Apr 19 14:51:27 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
 
-t_node    *find_link(t_list *list, char *name)
+t_node    *find_link(t_graph *list, char *name)
 {
   t_node        *tmp;
 

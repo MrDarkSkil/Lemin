@@ -5,14 +5,14 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sun Apr 17 23:09:47 2016 boris saint-bonnet
+** Last update Tue Apr 19 15:03:47 2016 boris saint-bonnet
 */
 
-#include "lamin.h"
+#include "lemin.h"
 
 int		main(int ac, char *av[])
 {
-  t_list	*list;
+  t_graph	*list;
   char		**tab;
 
   tab = file_to_tab(0);

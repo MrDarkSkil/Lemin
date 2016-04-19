@@ -5,14 +5,14 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 13:44:41 2016 boris saint-bonnet
-** Last update Sun Apr 17 21:55:47 2016 boris saint-bonnet
+** Last update Tue Apr 19 15:11:09 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
 
-t_list	*init_list(int	ants)
+t_graph	*init_list(int	ants)
 {
-  t_list	*list;
+  t_graph	*list;
 
   list = NULL;
   list = malloc(sizeof(*list));
@@ -20,7 +20,7 @@ t_list	*init_list(int	ants)
     {
       list->head = NULL;
       list->tail = NULL;
-      list->max_ant = ant;
+      list->max_ant = ants;
       list->start = NULL;
       list->end = NULL;
     }

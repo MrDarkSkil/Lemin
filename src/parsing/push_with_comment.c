@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Mon Apr 18 17:13:45 2016 boris saint-bonnet
-** Last update Tue Apr 19 15:02:02 2016 boris saint-bonnet
+** Last update Fri Apr 22 02:59:57 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -23,5 +23,5 @@ t_graph	*push_with_comment(t_graph *list, char *str)
 	push_to_list(list, str);
     }
   else if (check_comment(tab[0]) == 1)
-    check_start_end(list, str);      
+    check_start_end(str);      
 }

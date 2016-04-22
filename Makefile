@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Tue Apr 19 15:07:36 2016 boris saint-bonnet
+## Last update Fri Apr 22 03:06:27 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -17,24 +17,25 @@ CC	=	gcc
 
 NAME    =	lamine
 
-SRC	=	src/main.c		\
-		src/get_next_line.c	\
-		src/my_str_to_wordtab.c\
-		src/parsing/checking.c	\
-		src/parsing/check_start_end.c	\
-		src/parsing/check_starting_line.c\
-		src/parsing/epurstr.c\
-		src/parsing/my_read_inf.c\
-		src/parsing/my_realloc.c\
-		src/parsing/my_wordtab.c	\
-		src/parsing/push_link.c	\
-		src/parsing/push_to_list.c	\
-		src/parsing/push_with_comment.c	\
-		src/parsing/xmalloc.c\
-		src/get_next_line.c	\
-		src/linked_list/create_list.c\
-		src/linked_list/find_link.c\
-		src/linked_list/push.c\
+SRC	=	src/main.c				\
+		src/my_str_to_wordtab.c			\
+		src/parsing/checking.c			\
+		src/parsing/check_start_end.c		\
+		src/parsing/check_starting_line.c	\
+		src/parsing/epurstr.c			\
+		src/parsing/my_read_inf.c		\
+		src/parsing/my_realloc.c		\
+		src/parsing/my_wordtab.c		\
+		src/parsing/push_link.c			\
+		src/parsing/push_to_list.c		\
+		src/parsing/push_with_comment.c		\
+		src/parsing/xmalloc.c			\
+		src/parsing/my_free_tab.c		\
+		src/parsing/my_strdup.c			\
+		src/get_next_line.c			\
+		src/linked_list/create_list.c		\
+		src/linked_list/find_link.c		\
+		src/linked_list/push.c			\
 
 ECHO	=	/bin/echo -e
 DEFAULT	=	"\033[00m"

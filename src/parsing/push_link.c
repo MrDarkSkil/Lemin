@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:59:53 2016 boris saint-bonnet
-** Last update Tue Apr 19 15:09:47 2016 boris saint-bonnet
+** Last update Fri Apr 22 03:12:03 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -57,7 +57,7 @@ t_graph	*push_link_with_comment(t_graph *list, char *str)
   char		*tmp;
   
   tab = my_str_to_wordtab(str, '-');
-  node = find_link(tab[0]);
+  node = find_link(list, tab[0]);
   tmp = find_name(tab[1]);
   list = add_link(list, node, tmp);
   return (list);

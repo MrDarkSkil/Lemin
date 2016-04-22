@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 23:10:01 2016 boris saint-bonnet
-** Last update Fri Apr 22 18:14:43 2016 boris saint-bonnet
+** Last update Fri Apr 22 23:08:18 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -44,12 +44,16 @@ t_graph  *check_line(char **tab, t_graph *list)
       else if (check_comment(tab[i]) == 1 && check_link(tab[i]) == 0)
 	{
 	  list = check_start_end(list, tab[i], tab[i + 1], &flag);
-	  flag == 1 ? ((i += 1) && (flag = 0)) : ((i = i) && (flag = flag));
+	  if (flag == 1)
+	    {
+	      i += 1;
+	      flag = 0;
+	    }
 	}
       else if(check_comment(tab[i]) == 0 && check_link(tab[i]) == 1)
-	push_link(list, tab[i]);
+	list = push_link(list, tab[i]);
       else if (check_comment(tab[i]) == 1 && check_link(tab[i]) == 1)
-	push_link_with_comment(list, tab[i]);
+	list = push_link_with_comment(list, tab[i]);
       i++;
     }
   return (list);

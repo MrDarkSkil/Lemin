@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 13:44:41 2016 boris saint-bonnet
-** Last update Tue Apr 19 15:11:09 2016 boris saint-bonnet
+** Last update Fri Apr 22 22:42:17 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -25,14 +25,4 @@ t_graph	*init_list(int	ants)
       list->end = NULL;
     }
   return (list);
-}
-
-t_node	*init_link(t_node *node)
-{
-  t_link	*tmp;
-
-  tmp = xmalloc(sizeof(*tmp));
-  tmp->link = NULL;
-  tmp->next_link = NULL;
-  return (node);
 }

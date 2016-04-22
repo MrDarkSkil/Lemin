@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Mon Apr 18 17:38:22 2016 boris saint-bonnet
-** Last update Fri Apr 22 17:51:46 2016 boris saint-bonnet
+** Last update Fri Apr 22 22:44:14 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -24,7 +24,7 @@ t_graph 	*check_start_end(t_graph *list, char *str, char *str1, int *flag)
 {
   char		**tab;
 
-  if (*str || *str1 == NULL)
+  if (!str[0] || !str1[0])
     return (list);
   tab = create_tab_and_epur(str, ' ');
   if (my_strcmp("##start", tab[0]) == 0)

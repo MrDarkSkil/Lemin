@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Fri Apr 22 15:15:38 2016 boris saint-bonnet
+** Last update Fri Apr 22 23:33:39 2016 boris saint-bonnet
 */
 
 # ifndef __LINKED_LIST_H__

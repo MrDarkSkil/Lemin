@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Fri Apr 22 16:45:39 2016 boris saint-bonnet
+** Last update Fri Apr 22 23:33:22 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -43,7 +43,6 @@ t_graph  *push(t_graph *list, t_node tmp)
 	    }
 	}
     }
-  node = init_link(node);
   return (list);
 }
 

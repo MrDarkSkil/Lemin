@@ -5,10 +5,19 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Tue Apr 19 15:03:47 2016 boris saint-bonnet
+** Last update Fri Apr 22 14:52:19 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
+
+void	print_tab(char **tab)
+{
+  int	i;
+
+  i = -1;
+  while (tab[++i])
+    printf("%s\n", tab[i]);
+}
 
 int		main(int ac, char *av[])
 {
@@ -17,5 +26,5 @@ int		main(int ac, char *av[])
 
   tab = file_to_tab(0);
   list = init_list(my_getnbr(tab[0]));
-  list = tab_to_list(list, tab);
+  list = check_line(tab, list);
 }

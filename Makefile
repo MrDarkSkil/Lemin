@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Fri Apr 22 03:06:27 2016 boris saint-bonnet
+## Last update Fri Apr 22 14:47:25 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -13,9 +13,9 @@ LIB  	=	-lm -lmy -L./lib/
 CFLAGS  +=      -W -Wextra -Wall -pedantic
 CFLAGS  +=      -I./include/
 
-CC	=	gcc
+CC	=	gcc -g -g3
 
-NAME    =	lamine
+NAME    =	lemin
 
 SRC	=	src/main.c				\
 		src/my_str_to_wordtab.c			\

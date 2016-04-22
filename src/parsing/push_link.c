@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:59:53 2016 boris saint-bonnet
-** Last update Fri Apr 22 03:12:03 2016 boris saint-bonnet
+** Last update Fri Apr 22 15:53:23 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -31,9 +31,12 @@ char	*find_name(char *str)
       nb++;
     }
   res = xmalloc(sizeof(char) * nb + 1);
-  i = -1;
-  while (str[i] && char_is_num(str[++i]) == 1)
+  i = 0;
+  while (str[i] && char_is_num(str[i]) == 1)
+    {
     res[i] = str[i];
+    i++;
+    }
   res[i] = '\0';
   return (res);
 }
@@ -58,6 +61,7 @@ t_graph	*push_link_with_comment(t_graph *list, char *str)
   
   tab = my_str_to_wordtab(str, '-');
   node = find_link(list, tab[0]);
+  printf("%p\n", node);
   tmp = find_name(tab[1]);
   list = add_link(list, node, tmp);
   return (list);

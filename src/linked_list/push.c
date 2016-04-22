@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Fri Apr 22 15:45:22 2016 boris saint-bonnet
+** Last update Fri Apr 22 16:45:39 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -21,7 +21,6 @@ t_graph  *push(t_graph *list, t_node tmp)
       if (node != NULL)
 	{
 	  node->id = my_strdup(tmp.id);
-	  puts(node->id);
 	  node->posx = tmp.posx;
 	  node->posy = tmp.posy;
 	  node->ant = 0;

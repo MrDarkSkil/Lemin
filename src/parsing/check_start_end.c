@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Mon Apr 18 17:38:22 2016 boris saint-bonnet
-** Last update Fri Apr 22 22:44:14 2016 boris saint-bonnet
+** Last update Sat Apr 23 00:54:03 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -32,7 +32,7 @@ t_graph 	*check_start_end(t_graph *list, char *str, char *str1, int *flag)
       list = push_start_to_list(list, str1);
       (*flag) = 1;
     }
-  else if(my_strcmp("##end", tab[0]) == 0)
+  else if (my_strcmp("##end", tab[0]) == 0)
     {
       list = push_end_to_list(list, str1);
       (*flag) = 1;

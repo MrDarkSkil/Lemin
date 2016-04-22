@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 16:34:47 2016 boris saint-bonnet
-** Last update Fri Apr 22 14:41:42 2016 boris saint-bonnet
+** Last update Sat Apr 23 00:52:34 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -41,7 +41,7 @@ char            **my_wordtab(char *str, int i, int j)
   int           k;
   char          **tab;
 
-  tab = malloc(sizeof(char *) * (line_counter(str) + 1));
+  tab = xmalloc(sizeof(char *) * (line_counter(str) + 1));
   i = 0;
   j = 0;
   while (i < line_counter(str))
@@ -70,7 +70,7 @@ char            **my_linetab(char *str, int i, int j)
   int           k;
   char          **tab;
 
-  tab = malloc(sizeof(char *) * (line_counters(str) + 1));
+  tab = xmalloc(sizeof(char *) * (line_counters(str) + 1));
   i = 0;
   j = 0;
   while (i < line_counters(str))

@@ -5,11 +5,11 @@
 ** Login   <hubert_1@epitech.net>
 **
 ** Started on  Tue Oct  6 14:52:28 2015 leo hubert
-** Last update Tue Nov 10 14:59:37 2015 leo hubert
+** Last update Sat Apr 23 00:33:49 2016 boris saint-bonnet
 */
 
-#include "../../include/my.h"
 #include <stdlib.h>
+#include "../../include/my.h"
 
 int	my_strcmp(char *s1, char *s2)
 {

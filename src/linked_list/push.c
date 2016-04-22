@@ -5,30 +5,36 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Fri Apr 22 23:33:22 2016 boris saint-bonnet
+** Last update Sat Apr 23 00:45:48 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
 
-t_graph  *push(t_graph *list, t_node tmp)
+t_node		*init_push(t_node *node, t_node tmp)
+{
+  node->id = my_strdup(tmp.id);
+  node->posx = tmp.posx;
+  node->posy = tmp.posy;
+  node->ant = 0;
+  node->link_lenght = 0;
+  node->visited = 0;
+  node->dist = 0;
+  node->next = NULL;
+  node->nxt = NULL;
+  return (node);
+}
+
+t_graph		*push(t_graph *list, t_node tmp)
 {
   t_node        *node;
-  
+
   node = xmalloc(sizeof(*node));
   node->nxt = xmalloc(sizeof(t_link));
   if (list != NULL)
     {
       if (node != NULL)
 	{
-	  node->id = my_strdup(tmp.id);
-	  node->posx = tmp.posx;
-	  node->posy = tmp.posy;
-	  node->ant = 0;
-	  node->link_lenght = 0;
-	  node->visited = 0;
-	  node->dist = 0;
-	  node->next = NULL;
-	  node->nxt = NULL;
+	  node = init_push(node, tmp);
 	  if (list->tail == NULL)
 	    {
 	      node->prev = NULL;
@@ -46,7 +52,7 @@ t_graph  *push(t_graph *list, t_node tmp)
   return (list);
 }
 
-t_graph	*add_link(t_graph *list, t_node *node, char *id)
+t_graph		*add_link(t_graph *list, t_node *node, char *id)
 {
   t_link	*new_link;
   t_link	*tmp;

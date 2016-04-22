@@ -5,33 +5,15 @@
 ** Login   <hubert_1@epitech.net>
 ** 
 ** Started on  Tue Oct  6 15:19:59 2015 leo hubert
-** Last update Tue Oct  6 19:46:48 2015 leo hubert
+** Last update Sat Apr 23 00:38:20 2016 boris saint-bonnet
 */
 
 int	my_strncmp(char *s1, char *s2, int nb)
 {
-  int	counter;
+  int   i;
 
-  counter = 0;
-  while ((s1[counter] || s2[counter]) && counter < nb)
-    {
-      if (s1[counter] < s2[counter])
-	{
-	  return (0);
-	}
-      if (s1[counter] > s2[counter])
-	{
-	  return (1);
-	}
-	counter = counter + 1;
-    }
-  if ((s1[counter] < s2[counter]) && counter  < nb)
-    {
-      return (0);
-    }
-  else if ((s1[counter] > s2[counter]) && counter < nb)
-    {
-      return (1);
-    }
-  return (0);
+  i = 0;
+  while ((s1[i] == s2[i]) && s1[i] && s2[i] && i < nb)
+    i++;
+  return (s1[i] - s2[i]);
 }

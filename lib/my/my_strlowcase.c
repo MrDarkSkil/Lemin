@@ -5,11 +5,11 @@
 ** Login   <hubert_1@epitech.net>
 **
 ** Started on  Tue Oct  6 19:50:46 2015 leo hubert
-** Last update Tue Nov 10 15:00:16 2015 leo hubert
+** Last update Sat Apr 23 00:31:55 2016 boris saint-bonnet
 */
 
-#include "../../include/my.h"
 #include <stdlib.h>
+#include "../../include/my.h"
 
 char	*my_strlowcase(char *str)
 {

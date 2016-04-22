@@ -5,7 +5,7 @@
 ** Login   <hubert_1@epitech.net>
 **
 ** Started on  Tue Oct  6 19:28:57 2015 leo hubert
-** Last update Tue Apr 19 15:05:13 2016 boris saint-bonnet
+** Last update Sat Apr 23 00:33:35 2016 boris saint-bonnet
 */
 
 #include "../../include/my.h"
@@ -20,7 +20,8 @@ int	my_getnbr(char *str)
   i = 0;
   nbr = 0;
   if (str == NULL)
-    return (write(2, "Error: wrong parameters", my_strlen("Error: wrong parameters")));
+    return (write(2, "Error: wrong parameters",
+		  my_strlen("Error: wrong parameters")));
   while (str[i] && (str[i] == '+' || str[i] == '-'))
     if (str[i++] == '-')
       solution *= -1;

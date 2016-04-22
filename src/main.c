@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sat Apr 23 00:44:32 2016 boris saint-bonnet
+** Last update Sat Apr 23 01:30:42 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -25,8 +25,8 @@ void	printf_link(t_graph *list)
   t_link	*tmp2;
 
   tmp = list->head;
-  printf("start id: %s\n", list->start->id);
-  printf("end id: %s\n", list->end->id);
+  printf("start : %s\n", list->start->id);
+  printf("end : %s\n", list->end->id);
   while (tmp != NULL)
     {
       tmp2 = tmp->nxt;

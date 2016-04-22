@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 21:49:06 2016 boris saint-bonnet
-** Last update Sat Apr 23 00:41:11 2016 boris saint-bonnet
+** Last update Sat Apr 23 01:15:56 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -19,7 +19,6 @@ t_node    *find_link(t_graph *list, char *name)
     {
       if ((my_strncmp(tmp->id, name, my_strlen(name)) == 0))
 	return (tmp);
-      puts(tmp->id);
       tmp = tmp->next;
     }
   return (NULL);

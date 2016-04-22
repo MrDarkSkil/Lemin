@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Fri Apr 22 14:47:25 2016 boris saint-bonnet
+## Last update Sat Apr 23 01:32:14 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -15,7 +15,7 @@ CFLAGS  +=      -I./include/
 
 CC	=	gcc -g -g3
 
-NAME    =	lemin
+NAME    =	lem_in
 
 SRC	=	src/main.c				\
 		src/my_str_to_wordtab.c			\

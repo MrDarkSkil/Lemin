@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Mon Apr 18 17:38:22 2016 boris saint-bonnet
-** Last update Sat Apr 23 00:54:03 2016 boris saint-bonnet
+** Last update Sat Apr 23 01:45:30 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -38,6 +38,10 @@ t_graph 	*check_start_end(t_graph *list, char *str, char *str1, int *flag)
       (*flag) = 1;
     }
   else
-    list = push_to_list(list, str);
+    {
+      if (str[0] == '#')
+	return (list);
+      list = push_to_list(list, str);
+    }
   return (list);
 }

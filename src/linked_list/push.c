@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sat Apr 23 00:45:48 2016 boris saint-bonnet
+** Last update Sat Apr 23 02:26:31 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -52,6 +52,32 @@ t_graph		*push(t_graph *list, t_node tmp)
   return (list);
 }
 
+t_queue		*put_in_queue(t_queue *list, t_node *node)
+{
+  t_elem		*new;
+
+  new = xmalloc(sizeof(*new));
+  new->id = my_strdup(node->id);
+  new->cell = node;
+  new->prev = NULL;
+  new->next = NULL;
+  if (list != NULL)
+    {
+      if (list->head == NULL)
+	{
+	  list->head = new;
+	  list->tail = new;
+	}
+      else
+	{
+	  list->tail->next = new;
+	  new->prev = list->tail;
+	  list->tail = new;
+	}
+    }
+  return (list);
+}
+
 t_graph		*add_link(t_graph *list, t_node *node, char *id)
 {
   t_link	*new_link;
@@ -59,6 +85,7 @@ t_graph		*add_link(t_graph *list, t_node *node, char *id)
 
   new_link = xmalloc(sizeof(struct s_link));
   new_link->link = find_link(list, id);
+  new_link->father = node;
   new_link->next_link = NULL;
   if (node->nxt == NULL)
     {

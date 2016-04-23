@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Fri Apr 22 23:33:39 2016 boris saint-bonnet
+** Last update Sat Apr 23 02:01:28 2016 boris saint-bonnet
 */
 
 # ifndef __LINKED_LIST_H__
@@ -38,9 +38,24 @@ typedef struct		s_node
 
 typedef struct		s_link
 {
+  struct s_node		*father;
   struct s_node		*link;		/* pointeur vers l'emplacement memoire de la salle */
   struct s_link		*next_link;	/* pointeur vers le prochain lien */
 }			t_link;
+
+typedef struct		s_elem
+{
+  char			*id;
+  struct s_node		*cell;
+  struct s_elem		*next;
+  struct s_elem		*prev;
+}			t_elem;
+
+typedef struct		s_queue
+{
+  struct s_elem		*head;
+  struct s_elem		*tail;
+}			t_queue;
 
 t_graph *init_list(int  ants);
 t_node  *init_link(t_node *node);

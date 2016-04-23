@@ -1,11 +1,11 @@
 /*
 ** push.c for  in /home/xx/Rendu/CPE/Lemin/src/linked_list
-** 
+**
 ** Made by boris saint-bonnet
 ** Login   <saint-_o@epitech.net>
-** 
+**
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sat Apr 23 03:23:12 2016 boris saint-bonnet
+** Last update Sat Apr 23 21:18:59 2016 Lucas Gambini
 */
 
 # include "lemin.h"
@@ -18,7 +18,6 @@ t_node		*init_push(t_node *node, t_node tmp)
   node->ant = 0;
   node->link_lenght = 0;
   node->visited = 0;
-  node->dist = 0;
   node->next = NULL;
   node->nxt = NULL;
   return (node);
@@ -85,7 +84,6 @@ t_graph		*add_link(t_graph *list, t_node *node, char *id)
 
   new_link = xmalloc(sizeof(struct s_link));
   new_link->link = find_link(list, id);
-  new_link->father = node;
   new_link->next_link = NULL;
   if (node->nxt == NULL)
     {

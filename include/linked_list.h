@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Sat Apr 23 03:19:19 2016 boris saint-bonnet
+** Last update Sat Apr 23 21:18:37 2016 Lucas Gambini
 */
 
 # ifndef __LINKED_LIST_H__
@@ -13,33 +13,31 @@
 
 #include <stdbool.h>
 
-typedef struct		s_graph	
+typedef struct		s_graph
 {
-  struct s_node		*head;	
-  struct s_node		*tail;	
-  struct s_node		*start;	
-  struct s_node		*end;	
+  struct s_node		*head;
+  struct s_node		*tail;
+  struct s_node		*start;
+  struct s_node		*end;
   int			max_ant;
 }			t_graph;
 
 typedef struct		s_node
 {
-  char			*id;	
-  int			posx;	
+  char			*id;
+  int			posx;
+  int			posy;
   bool			visited;
-  int			dist;
-  int			posy;	
-  int			ant;	
+  int			ant;
   int			link_lenght;
-  struct s_node		*prev;	
+  struct s_node		*prev;
   struct s_node		*next;
-  struct s_link		*nxt;	
+  struct s_link		*nxt;
 }			t_node;
 
 typedef struct		s_link
 {
-  struct s_node		*father;
-  struct s_node		*link;	
+  struct s_node		*link;
   struct s_link		*next_link;
 }			t_link;
 

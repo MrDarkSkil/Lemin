@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:53 2016 Lucas Gambini
-** Last update Sat Apr 23 02:45:43 2016 boris saint-bonnet
+** Last update	Sat Apr 23 03:11:22 2016 Leo Hubert
 */
 
 #ifndef _LEMIN_H__
@@ -39,6 +39,5 @@ t_graph *push_end_to_list(t_graph *list, char *str);
 char	*my_strdup(char *src);
 void	free_tab(char **tab);
 void    *xmalloc(size_t size);
-
 
 #endif /* _LEMIN_ */

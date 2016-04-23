@@ -5,7 +5,7 @@
 ** Login   <hubert_1@epitech.net>
 **
 ** Started on  Thu Oct  8 14:25:19 2015 leo hubert
-** Last update Tue Apr 19 15:02:24 2016 boris saint-bonnet
+** Last update	Sat Apr 23 03:28:12 2016 Leo Hubert
 */
 
 #ifndef MY_
@@ -62,8 +62,6 @@ int	my_showstr(char *str);
 int	my_showmem(char *str, int size);
 char	*my_strcat(char *dest, char *src);
 char	*my_strncat(char *dest, char *src, int nb);
-int	sum_stdarg(int i, int nb, ...);
-int	disp_stdarg(char *s, ...);
 int	my_putnbr_bin(int nb);
 int	my_putnbr_base(int nbr, char *base);
 int	my_is_printable_char(char *str);

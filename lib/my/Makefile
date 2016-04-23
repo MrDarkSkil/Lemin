@@ -1,11 +1,11 @@
 ##
 ## Makefile for Make in /home/jabbar_y/rendu/PSU_2015_my_printf_bootstrap
-## 
+##
 ## Made by Jabbari Yassir
 ## Login   <jabbar_y@epitech.net>
-## 
+##
 ## Started on  Mon Nov  2 14:30:26 2015 Jabbari Yassir
-## Last update Thu Apr  7 23:44:56 2016 Lucas Gambini
+## Last update Sat Apr 23 03:27:23 2016 Leo Hubert
 ##
 
 ECHO	=	/bin/echo -e
@@ -58,8 +58,6 @@ SRCS	= 	my_find_prime_sup.c		\
 		my_strstr.c			\
 		my_strupcase.c			\
 		my_putnbr_bin.c			\
-		sum_stdarg.c			\
-		disp_stdarg.c			\
 		my_putnbr_base.c		\
 		my_putnbr_base_size.c		\
 		my_putnbr_unsigned.c  		\

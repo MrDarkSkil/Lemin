@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sat Apr 23 21:18:59 2016 Lucas Gambini
+** Last update Sat Apr 23 21:29:35 2016 Lucas Gambini
 */
 
 # include "lemin.h"
@@ -51,7 +51,7 @@ t_graph		*push(t_graph *list, t_node tmp)
   return (list);
 }
 
-t_queue		*put_in_queue(t_queue *list, t_node *node)
+t_path		*put_in_path(t_path *list, t_node *node)
 {
   t_elem		*new;
 

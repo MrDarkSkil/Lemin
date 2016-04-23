@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Sat Apr 23 21:18:37 2016 Lucas Gambini
+** Last update Sat Apr 23 21:53:15 2016 Lucas Gambini
 */
 
 # ifndef __LINKED_LIST_H__
@@ -49,16 +49,18 @@ typedef struct		s_elem
   struct s_elem		*prev;
 }			t_elem;
 
-typedef struct		s_queue
+typedef struct		s_path
 {
   struct s_elem		*head;
   struct s_elem		*tail;
-}			t_queue;
+}			t_path;
 
-t_graph *init_list(int  ants);
+t_graph *init_list(int ants);
 t_node  *init_link(t_node *node);
 t_node  *find_link(t_graph *list, char *name);
 t_graph *push(t_graph *list, t_node tmp);
 t_graph *add_link(t_graph *list, t_node *node, char *id);
+t_path  *put_in_path(t_path *list, t_node *node);
+t_path  *init_path(void);
 
 # endif /* ! __LINKED_LIST_H__ */

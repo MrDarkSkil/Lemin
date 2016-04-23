@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sat Apr 23 02:42:13 2016 boris saint-bonnet
+## Last update Sat Apr 23 03:53:02 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -17,9 +17,12 @@ CC	=	gcc -g -g3
 
 NAME    =	lem_in
 
-SRC	=	src/main.c				\
-		src/my_str_to_wordtab.c			\
-		src/parsing/checking.c			\
+
+LIST	=	src/linked_list/create_list.c		\
+		src/linked_list/find_link.c		\
+		src/linked_list/push.c			\
+
+PARSING =	src/parsing/checking.c			\
 		src/parsing/check_start_end.c		\
 		src/parsing/check_starting_line.c	\
 		src/parsing/epurstr.c			\
@@ -33,10 +36,15 @@ SRC	=	src/main.c				\
 		src/parsing/xmalloc.c			\
 		src/parsing/my_free_tab.c		\
 		src/parsing/my_strdup.c			\
+
+ALGO	=	src/algo/initAlgo.c			\
+
+SRC	=	$(LIST)					\
+		$(PARSING)				\
+		$(ALGO)					\
+		src/main.c				\
+		src/my_str_to_wordtab.c			\
 		src/get_next_line.c			\
-		src/linked_list/create_list.c		\
-		src/linked_list/find_link.c		\
-		src/linked_list/push.c			\
 
 ECHO	=	/bin/echo -e
 DEFAULT	=	"\033[00m"

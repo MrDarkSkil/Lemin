@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sat Apr 23 03:17:03 2016 boris saint-bonnet
+** Last update Sat Apr 23 04:02:17 2016 Léo Hubert
 */
 
 #include "lemin.h"
@@ -51,5 +51,7 @@ int		main(void)
   list = check_line(tab, list);
   if (check_validity(list) == -1)
     return (write(1, "invalid graph\n", my_strlen("invalid graph\n")));
-  printf_link(list);
+  /* printf_link(list); */
+  initAlgo(list);
+  return (0);
 }

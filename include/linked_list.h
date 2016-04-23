@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Sat Apr 23 02:01:28 2016 boris saint-bonnet
+** Last update Sat Apr 23 03:19:19 2016 boris saint-bonnet
 */
 
 # ifndef __LINKED_LIST_H__
@@ -13,34 +13,34 @@
 
 #include <stdbool.h>
 
-typedef struct		s_graph		/* Liste chainée de base, celle qui sera utilisée */
+typedef struct		s_graph	
 {
-  struct s_node		*head;		/* Head = premier maillon de la list */
-  struct s_node		*tail;		/* Tail = dernier maillon de la list */
-  struct s_node		*start;		/* Lien direct vers la salle de depart */
-  struct s_node		*end;		/* Lien direct vers la salle d'arrivée */
-  int			max_ant;	/* le nombre de fourmis totale */
+  struct s_node		*head;	
+  struct s_node		*tail;	
+  struct s_node		*start;	
+  struct s_node		*end;	
+  int			max_ant;
 }			t_graph;
 
 typedef struct		s_node
 {
-  char			*id;		/* Le nom de la salle */
-  int			posx;		/* position en x */
+  char			*id;	
+  int			posx;	
   bool			visited;
   int			dist;
-  int			posy;		/* position en y */
-  int			ant;		/* boleen permettant de savoir si il y a une fourmi ou pas dans la salle */
-  int			link_lenght;	/* le nombre de salle à laquelle celle-ci est reliée */
-  struct s_node		*prev;		/* liste doublement chainée */
+  int			posy;	
+  int			ant;	
+  int			link_lenght;
+  struct s_node		*prev;	
   struct s_node		*next;
-  struct s_link		*nxt;		/* liste de next ( lien de la salle) */
+  struct s_link		*nxt;	
 }			t_node;
 
 typedef struct		s_link
 {
   struct s_node		*father;
-  struct s_node		*link;		/* pointeur vers l'emplacement memoire de la salle */
-  struct s_link		*next_link;	/* pointeur vers le prochain lien */
+  struct s_node		*link;	
+  struct s_link		*next_link;
 }			t_link;
 
 typedef struct		s_elem

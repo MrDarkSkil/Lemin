@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:59:53 2016 boris saint-bonnet
-** Last update Sat Apr 23 00:50:15 2016 boris saint-bonnet
+** Last update Sat Apr 23 03:22:59 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -49,6 +49,8 @@ t_graph	*push_link(t_graph *list, char *str)
   tmp = create_tab_and_epur(str, '-');
   node = find_link(list, tmp[0]);
   list = add_link(list, node, tmp[1]);
+  node = find_link(list, tmp[1]);
+  list = add_link(list, node, tmp[0]);
   free_tab(tmp);
   return (list);
 }
@@ -62,6 +64,9 @@ t_graph	*push_link_with_comment(t_graph *list, char *str)
   tab = create_tab_and_epur(str, '-');
   node = find_link(list, tab[0]);
   tmp = find_name(tab[1]);
+  list = add_link(list, node, tmp);
+  node = find_link(list, tab[1]);
+  tmp = find_name(tab[0]);
   list = add_link(list, node, tmp);
   return (list);
 }

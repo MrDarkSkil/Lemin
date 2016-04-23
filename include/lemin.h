@@ -39,5 +39,6 @@ t_graph *push_end_to_list(t_graph *list, char *str);
 char	*my_strdup(char *src);
 void	free_tab(char **tab);
 void    *xmalloc(size_t size);
+int     initAlgo(t_graph *list);
 
 #endif /* _LEMIN_ */

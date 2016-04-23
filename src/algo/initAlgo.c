@@ -5,7 +5,7 @@
 ** Login   <hubert_i@epitech.net>
 **
 ** Started on  Sat Apr 23 03:49:01 2016 Léo Hubert
-** Last update Sat Apr 23 21:56:29 2016 Lucas Gambini
+** Last update Sat Apr 23 22:40:10 2016 Lucas Gambini
 */
 
 # include	"lemin.h"
@@ -26,7 +26,7 @@ t_path		*algo(t_graph *list, t_node *summit, t_path *path)
 	return (algo(list, summit, path));
       tmp = tmp->next_link;
     }
-  return (0);
+  return (path);
 }
 
 int		initAlgo(t_graph *list)
@@ -37,5 +37,10 @@ int		initAlgo(t_graph *list)
   start = list->start;
   path = init_path();
   path = algo(list, start, path);
+  if (my_strcmp(path->tail->id, list->end->id))
+    {
+      write(2, "Path not found.\n", 16);
+      return (-1);
+    }
   return (0);
 }

@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sat Apr 23 21:14:05 2016 Lucas Gambini
+** Last update Sat Apr 23 22:14:17 2016 Lucas Gambini
 */
 
 #include "lemin.h"
@@ -16,28 +16,9 @@ void	print_tab(char **tab)
 
   i = -1;
   while (tab[++i])
-    printf("%s\n", tab[i]);
-}
-
-void	printf_link(t_graph *list)
-{
-  t_node	*tmp;
-  t_link	*tmp2;
-
-  tmp = list->head;
-  printf("start : %s\n", list->start->id);
-  printf("end : %s\n", list->end->id);
-  while (tmp != NULL)
     {
-      tmp2 = tmp->nxt;
-      printf("id: %s\n posx: %d\n posy: %d\n",
-		tmp->id, tmp->posx, tmp->posy);
-      while (tmp2 != NULL)
-	{
-	  printf("link: %s\n", tmp2->link->id);
-	  tmp2 = tmp2->next_link;
-	}
-      tmp = tmp->next;
+      my_putstr(tab[i]);
+      write(1, "\n", 1);
     }
 }
 

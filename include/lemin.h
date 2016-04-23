@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:53 2016 Lucas Gambini
-** Last update Fri Apr 22 18:04:16 2016 boris saint-bonnet
+** Last update Sat Apr 23 02:45:43 2016 boris saint-bonnet
 */
 
 #ifndef _LEMIN_H__
@@ -16,6 +16,7 @@
 
 int     check_link(char *str);
 int     check_comment(char *str);
+int	check_validity(t_graph *list);
 t_graph *check_line(char **tab, t_graph *list);
 t_graph *push_start_link(t_graph *list, char *str);
 t_graph *push_end_link(t_graph *list, char *str);
@@ -24,6 +25,7 @@ t_graph *tab_to_list(t_graph *list, char **tab);
 char    *epur_str(char *line);
 char    **create_tab_and_epur(char *line, char c);
 char    **file_to_tab(int fd);
+char	**my_linetab(char *str, int i, int j);
 char    *my_realloc(char *in, int size);
 int     line_counter(char *str);
 char    **my_wordtab(char *str, int i, int j);

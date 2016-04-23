@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sat Apr 23 02:32:52 2016 boris saint-bonnet
+** Last update Sat Apr 23 02:46:00 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -41,7 +41,7 @@ void	printf_link(t_graph *list)
     }
 }
 
-int		main(int ac, char *av[])
+int		main(void)
 {
   t_graph	*list;
   char		**tab;
@@ -49,5 +49,6 @@ int		main(int ac, char *av[])
   tab = file_to_tab(0);
   list = init_list(my_getnbr(tab[0]));
   list = check_line(tab, list);
-  printf_link(list);
+  if (check_validity(list) == -1)
+    return (write(1, "invalid graph\n", my_strlen("invalid graph\n")));
 }

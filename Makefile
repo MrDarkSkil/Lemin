@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sat Apr 23 01:32:14 2016 boris saint-bonnet
+## Last update Sat Apr 23 02:42:13 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -23,6 +23,7 @@ SRC	=	src/main.c				\
 		src/parsing/check_start_end.c		\
 		src/parsing/check_starting_line.c	\
 		src/parsing/epurstr.c			\
+		src/parsing/check_list.c		\
 		src/parsing/my_read_inf.c		\
 		src/parsing/my_realloc.c		\
 		src/parsing/my_wordtab.c		\

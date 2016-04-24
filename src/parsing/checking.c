@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 23:10:01 2016 boris saint-bonnet
-** Last update Sun Apr 24 15:55:14 2016 Lucas Gambini
+** Last update Sun Apr 24 16:04:56 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -73,7 +73,10 @@ t_graph	*check_line(t_graph *list)
 
   flag = 0;
   s = get_next_line(0);
+  my_putstr(s);
+  write(1, "\n", 1);
   list->max_ant = my_getnbr(s);
+  free(s);
   while ((s = get_next_line(0)) && flag >= 0)
     {
       if (check_error(s) == 1)

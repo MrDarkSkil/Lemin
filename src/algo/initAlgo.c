@@ -5,7 +5,7 @@
 ** Login   <hubert_i@epitech.net>
 **
 ** Started on  Sat Apr 23 03:49:01 2016 Léo Hubert
-** Last update Sun Apr 24 06:36:48 2016 Léo Hubert
+** Last update Sun Apr 24 06:45:17 2016 Léo Hubert
 */
 
 # include	"lemin.h"
@@ -60,16 +60,14 @@ void		ants_go_ants(t_graph *list, t_path *path)
 
   i = 1;
   path->head->cell->ant = list->max_ant;
-  tmp = path->head;
-  total = count_path(tmp);
+  total = count_path(path->head);
   while (path->tail->cell->ant < list->max_ant)
     {
-      state = 0;
-      ii = 1;
+      state = (ii = 1) - 1;
       tmp = path->head;
       tmp->cell->id_ant = i;
       tmp = path->tail;
-      while (ii < total)
+      while (ii++ < total)
 	{
 	  if (tmp->prev->cell->ant > 0)
 	    {
@@ -82,7 +80,6 @@ void		ants_go_ants(t_graph *list, t_path *path)
 	      state = 1;
 	    }
 	  tmp = tmp->prev;
-	  ii++;
 	}
       my_putstr("\n");
       i++;

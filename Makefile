@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sat Apr 23 03:53:02 2016 Léo Hubert
+## Last update Sun Apr 24 06:53:03 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -38,6 +38,7 @@ PARSING =	src/parsing/checking.c			\
 		src/parsing/my_strdup.c			\
 
 ALGO	=	src/algo/initAlgo.c			\
+		src/algo/ans.c				\
 
 SRC	=	$(LIST)					\
 		$(PARSING)				\

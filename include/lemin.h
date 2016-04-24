@@ -40,5 +40,9 @@ char	*my_strdup(char *src);
 void	free_tab(char **tab);
 void    *xmalloc(size_t size);
 int     initAlgo(t_graph *list);
+void	ants_go_ants_2(t_elem *tmp, int total);
+void	print_deplace(int id_ant, char *id_cell);
+int	count_path(t_elem *tmp);
+void	ants_go_ants(t_graph *list, t_path *path);
 
 #endif /* _LEMIN_ */

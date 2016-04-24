@@ -5,15 +5,15 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sun Apr 24 06:53:03 2016 Léo Hubert
+## Last update Sun Apr 24 06:57:14 2016 Léo Hubert
 ##
 
 LIB  	=	-lm -lmy -L./lib/
-#CFLAGS  +=	-Werror
-CFLAGS  +=      -W -Wextra -Wall -pedantic
+CFLAGS  +=	-Werror
+CFLAGS  +=      -W -Wextra -Wall -pedantic -ansi
 CFLAGS  +=      -I./include/
 
-CC	=	gcc -g -g3
+CC	=	gcc
 
 NAME    =	lem_in
 
@@ -38,7 +38,7 @@ PARSING =	src/parsing/checking.c			\
 		src/parsing/my_strdup.c			\
 
 ALGO	=	src/algo/initAlgo.c			\
-		src/algo/ans.c				\
+		src/algo/ant.c				\
 
 SRC	=	$(LIST)					\
 		$(PARSING)				\

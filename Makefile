@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sun Apr 24 08:54:12 2016 boris saint-bonnet
+## Last update Sun Apr 24 14:36:38 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -36,6 +36,7 @@ PARSING =	src/parsing/checking.c			\
 		src/parsing/xmalloc.c			\
 		src/parsing/my_free_tab.c		\
 		src/parsing/my_strdup.c			\
+		src/new/first_line.c			\
 
 ALGO	=	src/algo/initAlgo.c			\
 		src/algo/ant.c				\

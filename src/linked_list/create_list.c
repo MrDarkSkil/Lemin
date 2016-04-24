@@ -5,12 +5,12 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:44:41 2016 boris saint-bonnet
-** Last update Sat Apr 23 21:30:17 2016 Lucas Gambini
+** Last update Sun Apr 24 14:50:03 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
 
-t_graph		*init_list(int ants)
+t_graph		*init_list()
 {
   t_graph	*list;
 
@@ -20,7 +20,7 @@ t_graph		*init_list(int ants)
     {
       list->head = NULL;
       list->tail = NULL;
-      list->max_ant = ants;
+      list->max_ant = 0;
       list->start = NULL;
       list->end = NULL;
     }

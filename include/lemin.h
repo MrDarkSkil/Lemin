@@ -14,6 +14,7 @@
 # include "my.h"
 # include "linked_list.h"
 
+int	check_error(char *str);
 int     check_link(char *str);
 int     check_comment(char *str);
 int	check_validity(t_graph *list);

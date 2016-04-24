@@ -5,7 +5,7 @@
 ** Login   <gambin_l@epitech.net>
 **
 ** Started on  Tue Apr  5 10:42:43 2016 Lucas Gambini
-** Last update Sat Apr 23 22:14:17 2016 Lucas Gambini
+** Last update Sun Apr 24 09:00:42 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
@@ -15,10 +15,10 @@ void	print_tab(char **tab)
   int	i;
 
   i = -1;
-  while (tab[++i])
+  while (tab[++i] && tab[i + 1])
     {
       my_putstr(tab[i]);
-      write(1, "\n", 1);
+      my_putchar('\n');
     }
 }
 
@@ -32,6 +32,8 @@ int		main(void)
   list = check_line(tab, list);
   if (check_validity(list) == -1)
     return (write(1, "invalid graph\n", my_strlen("invalid graph\n")));
+  print_tab(tab);
   initAlgo(list);
+  free_tab(tab);
   return (0);
 }

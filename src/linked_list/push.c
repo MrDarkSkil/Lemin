@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sat Apr 23 21:29:35 2016 Lucas Gambini
+** Last update Sun Apr 24 05:23:52 2016 Léo Hubert
 */
 
 # include "lemin.h"
@@ -16,6 +16,7 @@ t_node		*init_push(t_node *node, t_node tmp)
   node->posx = tmp.posx;
   node->posy = tmp.posy;
   node->ant = 0;
+  node->id_ant = 0;
   node->link_lenght = 0;
   node->visited = 0;
   node->next = NULL;

@@ -5,25 +5,14 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Mon Apr 18 17:38:22 2016 boris saint-bonnet
-** Last update Sun Apr 24 14:41:53 2016 boris saint-bonnet
+** Last update Sun Apr 24 18:07:43 2016 boris saint-bonnet
 */
 
 #include "lemin.h"
 
-t_graph	*push_start_link(t_graph *list, char *str)
-{
-  return (list = push_start_to_list(list, str));
-}
-
-t_graph	*push_end_link(t_graph *list, char *str)
-{
-  return (list = push_end_to_list(list, str));
-}
-
 t_graph 	*check_start_end(t_graph *list, char *str, int *flag)
 {
   char		**tab;
-
   if (!str[0])
     {
       (*flag) = -1;

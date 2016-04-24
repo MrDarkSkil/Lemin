@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sun Apr 24 16:00:52 2016 Lucas Gambini
+## Last update Sun Apr 24 16:16:18 2016 boris saint-bonnet
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -13,7 +13,7 @@ CFLAGS  +=	-Werror
 CFLAGS  +=      -W -Wextra -Wall -pedantic -ansi
 CFLAGS  +=      -I./include/
 
-CC	=	gcc
+CC	=	gcc -g -g3
 
 NAME    =	lem_in
 

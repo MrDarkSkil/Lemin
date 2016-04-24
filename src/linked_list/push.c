@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 20:43:25 2016 boris saint-bonnet
-** Last update Sun Apr 24 05:23:52 2016 Léo Hubert
+** Last update Sun Apr 24 17:32:01 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -78,13 +78,17 @@ t_path		*put_in_path(t_path *list, t_node *node)
   return (list);
 }
 
-t_graph		*add_link(t_graph *list, t_node *node, char *id)
+t_graph		*add_link(t_graph *list, t_node *node, char *id, int *flag)
 {
   t_link	*new_link;
   t_link	*tmp;
 
   new_link = xmalloc(sizeof(struct s_link));
-  new_link->link = find_link(list, id);
+  if ((new_link->link = find_link(list, id)) == NULL)
+    {
+      *flag = -1;
+      return (list);
+    }
   new_link->next_link = NULL;
   if (node->nxt == NULL)
     {

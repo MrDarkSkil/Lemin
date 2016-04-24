@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 **
 ** Started on  Sun Apr 17 13:37:36 2016 boris saint-bonnet
-** Last update Sun Apr 24 14:50:57 2016 boris saint-bonnet
+** Last update Sun Apr 24 17:32:18 2016 boris saint-bonnet
 */
 
 # ifndef __LINKED_LIST_H__
@@ -60,7 +60,7 @@ t_graph *init_list();
 t_node  *init_link(t_node *node);
 t_node  *find_link(t_graph *list, char *name);
 t_graph *push(t_graph *list, t_node tmp);
-t_graph *add_link(t_graph *list, t_node *node, char *id);
+t_graph *add_link(t_graph *list, t_node *node, char *id, int *flag);
 t_path  *put_in_path(t_path *list, t_node *node);
 t_path  *init_path(void);
 

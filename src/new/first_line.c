@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 24 10:21:44 2016 boris saint-bonnet
-** Last update Sun Apr 24 14:45:52 2016 boris saint-bonnet
+** Last update Sun Apr 24 16:45:33 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -26,12 +26,4 @@ int	my_str_is_num(char *str)
     if (is_num(str[i]) == -1)
       return (-1);
   return (0);
-}
-
-t_graph	*my_init(t_graph *list, char *s)
-{
-  if (my_str_is_num(s) == 0)
-    return (list = init_list(my_getnbr(s)));
-  write(1, "Invalide Input\n", my_strlen("Invalide Input\n"));
-  return (list);
 }

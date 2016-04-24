@@ -5,7 +5,7 @@
 ** Login   <saint-_o@epitech.net>
 ** 
 ** Started on  Sun Apr 17 20:59:53 2016 boris saint-bonnet
-** Last update Sat Apr 23 03:22:59 2016 boris saint-bonnet
+** Last update Sun Apr 24 17:53:08 2016 boris saint-bonnet
 */
 
 # include "lemin.h"
@@ -41,32 +41,40 @@ char	*find_name(char *str)
   return (res);
 }
 
-t_graph	*push_link(t_graph *list, char *str)
+t_graph	*push_link(t_graph *list, char *str, int *flag)
 {
   char		**tmp;
   t_node	*node;
 
   tmp = create_tab_and_epur(str, '-');
-  node = find_link(list, tmp[0]);
-  list = add_link(list, node, tmp[1]);
+  if ((node = find_link(list, tmp[0])) == NULL || !list->start || !list->end)
+    {
+      *flag = -1;
+      return (list);
+    }
+  list = add_link(list, node, tmp[1], flag);
   node = find_link(list, tmp[1]);
-  list = add_link(list, node, tmp[0]);
+  list = add_link(list, node, tmp[0], flag);
   free_tab(tmp);
   return (list);
 }
 
-t_graph	*push_link_with_comment(t_graph *list, char *str)
+t_graph	*push_link_with_comment(t_graph *list, char *str, int *flag)
 {
   char		**tab;
   t_node	*node;
   char		*tmp;
 
   tab = create_tab_and_epur(str, '-');
-  node = find_link(list, tab[0]);
+  if ((node = find_link(list, tab[0])) == NULL || !list->start || !list->end)
+    {
+      *flag = -1;
+      return (list);
+    }
   tmp = find_name(tab[1]);
-  list = add_link(list, node, tmp);
+  list = add_link(list, node, tmp, flag);
   node = find_link(list, tab[1]);
   tmp = find_name(tab[0]);
-  list = add_link(list, node, tmp);
+  list = add_link(list, node, tmp, flag);
   return (list);
 }

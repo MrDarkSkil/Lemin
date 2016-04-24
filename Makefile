@@ -5,7 +5,7 @@
 ## Login   <hubert_i@epitech.net>
 ## 
 ## Started on  Tue Apr  5 13:41:24 2016 Léo Hubert
-## Last update Sun Apr 24 14:36:38 2016 boris saint-bonnet
+## Last update Sun Apr 24 16:00:52 2016 Lucas Gambini
 ##
 
 LIB  	=	-lm -lmy -L./lib/
@@ -92,12 +92,6 @@ $(NAME):	$(OBJ)
 		$(ECHO) $(GREEN) "[OK] gcc" $(TEAL) $(OBJ) $(DEFAULT) || \
 		$(ECHO) $(RED) "[ERROR] gcc" $(TEAL) $(OBJ) $(DEFAULT)
 		@$(ECHO) $(FINISH) "\nCompilation Succesfully of "$(NAME) $(DEFAULT)
-		@$(ECHO) $(RED)".____                        .__                     _  _  ____   ____        ._____            "
-		@$(ECHO) "|    |   _____         _____ |__| ____   ____     __| || |_\   \ /   /___   __| _/  | _______   "
-		@$(ECHO) "|    |   \__  \       /     \|  |/    \_/ __ \    \   __   /\   Y   /  _ \ / __ ||  |/ /\__  \  "
-		@$(ECHO) "|    |___ / __ \_    |  Y Y  \  |   |  \  ___/     |  ||  |  \     (  <_> ) /_/ ||    <  / __ \_"
-		@$(ECHO) "|_______ (____  /____|__|_|  /__|___|  /\___  >   /_  ~~  _\  \___/ \____/\____ ||__|_ \(____  /"
-		@$(ECHO) "        \/    \/_____/     \/        \/     \/      |_||_|                     \/     \/     \/ "
 		@$(ECHO) $(DEFAULT)
 		@paplay include/sound/end.ogg &
 
